@@ -5,8 +5,6 @@ This repository provides the code and data for our ACL 2025 paper:
 > **[Vision-Language Models Struggle to Align Entities across Modalities](https://arxiv.org/abs/2503.03854)**  
 > *Iñigo Alonso, Gorka Azkune, Ander Salaberria, Jeremy Barnes, Oier Lopez de Lacalle*
 
----
-
 ## Getting Started
 1. **Clone the repository and install dependencies**
    ```bash
@@ -19,15 +17,12 @@ This repository provides the code and data for our ACL 2025 paper:
 Please download the development version of MATE [here](https://drive.google.com/file/d/1_joeNBesJSUsMEdgVpnKEySTW2wmodeN/view?usp=share_link) and extract it into the MATE/data/ directory.
 While the public version is hosted on 🤗 [HuggingFace](https://huggingface.co/datasets/HiTZ/MATE), we use the development version for experiments in the paper. This version includes the same examples, with additional metadata useful for evaluation.
 
----
-
 ## Inference
-
 To run inference with any of the supported models:
 ```
 python3 ./src/main_inference.py --base_model MODEL_NAME --batch_size 1 --max_new_tokens 80 --dataset_path data/mate/dev/MATE_VARIANT
 ```
-**MATE variants** (available at MATE/data/dev/*):
+**MATE variants** (available at `MATE/data/dev/*`):
 * `mm_0shot.jsonl`: cross-modal (img2data, data2img) 0-shot
 * `mm_1shot.jsonl`: cross-modal (img2data, data2img) 1-shot
 * `mm_2shot.jsonl`: cross-modal (img2data, data2img) 2-shot
@@ -55,9 +50,7 @@ python3 ./src/main_inference.py --base_model MODEL_NAME --batch_size 1 --max_new
 While these are the models used in the paper, this code support a wider range of models. See `src/model/vlm_models.py` 
 for a complete list of supported models.
 
----
-
-## Evaluation 
+## Reproducing Results 
 ### Tables
 Cross-modal and unimodal overall results. To reproduce **Table 1** and **Table 3**, run:
 ```bash
@@ -96,8 +89,6 @@ Predicted Object Attribute Overlapping in 3D Coordinate-Only Linking Attribute C
 ```bash
 python3 src/eval/gen_fig_05.py
 ```
-
----
 
 ## Citations
 If you find MATE useful in your research, please consider giving us a star 🌟 and citing it by the following BibTeX entry.

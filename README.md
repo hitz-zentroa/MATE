@@ -51,41 +51,44 @@ While these are the models used in the paper, this code support a wider range of
 for a complete list of supported models.
 
 ## Reproducing Results 
+The [development version of MATE](https://drive.google.com/file/d/1_joeNBesJSUsMEdgVpnKEySTW2wmodeN/view?usp=share_link) provides inference outputs for all models used in the paper, which are required to 
+reproduce the results presented below.
+
 ### Tables
-Cross-modal and unimodal overall results. To reproduce **Table 1** and **Table 3**, run:
+**Table 1** and **Table 3**: Cross-modal and unimodal overall results.
 ```bash
 python3 src/eval/gen_table_01.py
 ```
-Performance per attribute results. To reproduce **Table 2**, run:
+**Table 2**: Performance per attribute results.
 ```bash
 python3 src/eval/gen_table_02.py
 ```
-Chain-of-thought results. To reproduce **Table 4**, run:
+**Table 4**: Chain-of-thought results.
 ```bash
 python3 src/eval/gen_table_04.py
 ```
-Complete performance per attribute results. To reproduce  **Table 8**, run:
+**Table 8**: Complete performance per attribute results.
 ```bash
 python3 src/eval/gen_table_08.py
 ```
-Complete performance for 0, 1, and 2 shot prompts. To reproduce  **Table 9**, run:
+**Table 9**: Complete performance for 0, 1, and 2 shot prompts.
 ```bash
 python3 src/eval/gen_table_09.py
 ```
 ### Figures
-Cross-modal performance per object count. To reproduce  **Figure 2**, run:
+**Figure 2**: Cross-modal performance per object count.
 ```bash
 python3 src/eval/gen_fig_02.py
 ```
-Uni-modal performance per object count. To reproduce  **Figure 3**, run:
+**Figure 3**: Uni-modal performance per object count.
 ```bash
 python3 src/eval/gen_fig_03.py
 ```
-Linking attribute analysis. To reproduce  **Figure 4**, run:
+**Figure 4**: Linking attribute analysis.
 ```bash
 python3 src/eval/gen_fig_04.py
 ```
-Predicted Object Attribute Overlapping in 3D Coordinate-Only Linking Attribute Cases. To reproduce  **Figure 5**, run:
+**Figure 5**: Predicted Object Attribute Overlapping in 3D Coordinate-Only Linking Attribute Cases.
 ```bash
 python3 src/eval/gen_fig_05.py
 ```

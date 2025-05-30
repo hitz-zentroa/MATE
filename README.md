@@ -14,7 +14,7 @@ This repository provides the code and data for our ACL 2025 paper:
    export PYTHONPATH="$PWD/src"
    ```
 2.	**Download the Development Version of MATE Benchmark**
-Please download the development version of MATE [here](https://drive.google.com/file/d/1_joeNBesJSUsMEdgVpnKEySTW2wmodeN/view?usp=share_link) and extract it into the MATE/data/ directory.
+Please download the development version of MATE [here](https://drive.google.com/file/d/1goXq574TyNJ_r3EVfStfNdiGmnq4QoTC/view?usp=share_link) and extract it into the MATE/data/ directory.
 While the public version is hosted on 🤗 [HuggingFace](https://huggingface.co/datasets/HiTZ/MATE), we use the development version for experiments in the paper. This version includes the same examples, with additional metadata useful for evaluation.
 
 ## Inference
@@ -51,7 +51,7 @@ While these are the models used in the paper, this code support a wider range of
 for a complete list of supported models.
 
 ## Reproducing Results 
-The [development version of MATE](https://drive.google.com/file/d/1_joeNBesJSUsMEdgVpnKEySTW2wmodeN/view?usp=share_link) provides inference outputs for all models used in the paper, which are required to 
+The [development version of MATE](https://drive.google.com/file/d/1goXq574TyNJ_r3EVfStfNdiGmnq4QoTC/view?usp=share_link) provides inference outputs for all models used in the paper, which are required to 
 reproduce the results presented below.
 
 ### Tables
